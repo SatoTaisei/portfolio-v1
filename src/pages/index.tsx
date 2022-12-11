@@ -1,6 +1,6 @@
 import Head from 'next/head';
 
-import { Footer } from '@/components/Footer/Footer';
+import { Footer } from '@/components/Footer';
 import styles from '@styles/Home.module.scss';
 
 export default function Home() {
