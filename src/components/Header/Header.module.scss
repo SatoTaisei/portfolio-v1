@@ -1,0 +1,23 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+
+.logo {
+    height: 50%;
+}
+
+.menu {
+    padding: 0;
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item {
+    display: inline-block;
+}
