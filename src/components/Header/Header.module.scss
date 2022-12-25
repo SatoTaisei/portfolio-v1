@@ -1,23 +1,51 @@
 .wrapper {
+    width: 100%;
     display: flex;
     align-items: center;
-    height: 100px;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 2rem;
+    border-bottom: 1px solid #eaeaea;
 }
 
 .logo {
-    height: 50%;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font-size: 1.6rem;
 }
 
 .menu {
     padding: 0;
+    height: 100%;
 }
 
 .list {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: inherit;
+    font-size: 1.6rem;
+    padding-inline-start: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
 }
 
 .item {
-    display: inline-block;
+    display: block;
+    height: inherit;
+    text-transform: capitalize;
+    &:not(:first-child) {
+        margin-left: 24px;
+    }
+}
+
+.link {
+    height: inherit;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+        color: #ddd;
+    }
 }
