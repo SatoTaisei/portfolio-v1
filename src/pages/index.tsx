@@ -2,6 +2,7 @@ import Head from 'next/head';
 
 import { Footer } from '@/components/Footer';
 import { Header } from '@/components/Header';
+import { Hero } from '@/components/Hero';
 import styles from '@styles/Home.module.scss';
 
 export default function Home() {
@@ -18,7 +19,13 @@ export default function Home() {
 
             <Header />
 
-            <main className={styles.main}>Main Area</main>
+            <main className={styles.main}>
+                <Hero />
+
+                <div className={styles.dummy}>ShowCase</div>
+                <div className={styles.dummy}>Timeline</div>
+                <div className={styles.dummy}>Contact</div>
+            </main>
 
             <Footer />
         </>
