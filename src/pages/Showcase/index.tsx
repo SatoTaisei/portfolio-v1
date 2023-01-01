@@ -3,6 +3,8 @@ import Head from 'next/head';
 import { Footer } from '@/components/Footer';
 import { Header } from '@/components/Header';
 
+import styles from './Showcase.module.scss';
+
 export default function Showcase() {
     return (
         <>
@@ -12,9 +14,9 @@ export default function Showcase() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <Header />
+            <Header breadcrumbs={'Showcase'} />
 
-            <main>
+            <main className={styles.main}>
                 <div>Showcase</div>
             </main>
 

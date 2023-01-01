@@ -8,11 +8,23 @@
     border-bottom: 1px solid #eaeaea;
 }
 
+.logoWrapper {
+    display: inline-block;
+}
+
 .logo {
     display: flex;
     align-items: center;
     height: 100%;
     font-size: 1.6rem;
+}
+
+.breadcrumbs {
+    font-size: 1.6rem;
+    &::before {
+        content: '>';
+        padding: 0 1rem;
+    }
 }
 
 .menu {

@@ -3,6 +3,8 @@ import Head from 'next/head';
 import { Footer } from '@/components/Footer';
 import { Header } from '@/components/Header';
 
+import styles from './Profile.module.scss';
+
 export default function Profile() {
     return (
         <>
@@ -12,9 +14,9 @@ export default function Profile() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <Header />
+            <Header breadcrumbs={'Profile'} />
 
-            <main>
+            <main className={styles.main}>
                 <div>Profile</div>
             </main>
 

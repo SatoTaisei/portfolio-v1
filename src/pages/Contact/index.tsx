@@ -3,6 +3,8 @@ import Head from 'next/head';
 import { Footer } from '@/components/Footer';
 import { Header } from '@/components/Header';
 
+import styles from './Contact.module.scss';
+
 export default function Contact() {
     return (
         <>
@@ -12,9 +14,11 @@ export default function Contact() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <Header />
+            <Header breadcrumbs={'Contact'} />
 
-            <div>Contact</div>
+            <main className={styles.main}>
+                <div>Contact</div>
+            </main>
 
             <Footer />
         </>
