@@ -15,14 +15,6 @@
     font-size: 1.6rem;
 }
 
-.breadcrumbs {
-    font-size: 1.6rem;
-    &::before {
-        content: '>';
-        padding: 0 1rem;
-    }
-}
-
 .menu {
     padding: 0;
     height: 100%;
@@ -55,5 +47,12 @@
 
     &:hover {
         color: #ddd;
+    }
+
+    & > span[data-istracking='true'] {
+        border-bottom: 2px solid #fff;
+    }
+    &:hover > span[data-istracking='true'] {
+        border-bottom: 2px solid #ddd;
     }
 }
