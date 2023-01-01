@@ -14,7 +14,7 @@ export const Header = () => {
         <header className={styles.wrapper}>
             <Link href={'/'}>
                 <span className={styles.logo}>Sato Taisei</span>
-ｓぱ            </Link>
+            </Link>
             <div className={styles.menu}>
                 <ul className={styles.list}>
                     {MENU_LIST.map((item, index) => (
