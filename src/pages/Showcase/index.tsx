@@ -14,7 +14,7 @@ export default function Showcase() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <Header breadcrumbs={'Showcase'} />
+            <Header />
 
             <main className={styles.main}>
                 <div>Showcase</div>

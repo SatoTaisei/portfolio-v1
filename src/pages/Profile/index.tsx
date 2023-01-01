@@ -14,7 +14,7 @@ export default function Profile() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <Header breadcrumbs={'Profile'} />
+            <Header />
 
             <main className={styles.main}>
                 <div>Profile</div>

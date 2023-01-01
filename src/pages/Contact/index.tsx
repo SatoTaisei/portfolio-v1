@@ -14,7 +14,7 @@ export default function Contact() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <Header breadcrumbs={'Contact'} />
+            <Header />
 
             <main className={styles.main}>
                 <div>Contact</div>

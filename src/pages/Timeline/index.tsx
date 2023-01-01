@@ -14,7 +14,7 @@ export default function Timeline() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <Header breadcrumbs={'Timeline'} />
+            <Header />
 
             <main className={styles.main}>
                 <div>Timeline</div>

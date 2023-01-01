@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import { FC } from 'react';
 
 import styles from './Header.module.scss';
 
@@ -10,20 +9,13 @@ const MENU_LIST = [
     { name: 'profile', url: '/Profile' },
 ];
 
-type Props = {
-    breadcrumbs?: string;
-};
-
-export const Header: FC<Props> = ({ breadcrumbs }) => {
+export const Header = () => {
     return (
         <header className={styles.wrapper}>
             <div>
-                <Link href={'/'} className={styles.logoWrapper}>
+                <Link href={'/'}>
                     <span className={styles.logo}>Sato Taisei</span>
                 </Link>
-                {breadcrumbs && (
-                    <span className={styles.breadcrumbs}>{breadcrumbs}</span>
-                )}
             </div>
 
             <div className={styles.menu}>
