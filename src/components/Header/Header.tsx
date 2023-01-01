@@ -3,16 +3,18 @@ import Link from 'next/link';
 import styles from './Header.module.scss';
 
 const MENU_LIST = [
-    { name: 'showcase', url: '#' },
-    { name: 'timeline', url: '#' },
-    { name: 'contact', url: '#' },
-    { name: 'profile', url: '#' },
+    { name: 'showcase', url: '/Showcase' },
+    { name: 'timeline', url: '/Timeline' },
+    { name: 'contact', url: '/Contact' },
+    { name: 'profile', url: '/Profile' },
 ];
 
 export const Header = () => {
     return (
         <header className={styles.wrapper}>
-            <span className={styles.logo}>Sato Taisei</span>
+            <Link href={'/'}>
+                <span className={styles.logo}>Sato Taisei</span>
+ｓぱ            </Link>
             <div className={styles.menu}>
                 <ul className={styles.list}>
                     {MENU_LIST.map((item, index) => (
