@@ -2,8 +2,7 @@ import Head from 'next/head';
 
 import { Footer } from '@/components/Footer';
 import { Header } from '@/components/Header';
-
-import styles from './Contact.module.scss';
+import { Main } from '@/components/Main';
 
 export default function Contact() {
     return (
@@ -16,9 +15,9 @@ export default function Contact() {
 
             <Header />
 
-            <main className={styles.main}>
+            <Main>
                 <div>Contact</div>
-            </main>
+            </Main>
 
             <Footer />
         </>

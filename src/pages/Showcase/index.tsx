@@ -2,8 +2,7 @@ import Head from 'next/head';
 
 import { Footer } from '@/components/Footer';
 import { Header } from '@/components/Header';
-
-import styles from './Showcase.module.scss';
+import { Main } from '@/components/Main';
 
 export default function Showcase() {
     return (
@@ -16,9 +15,9 @@ export default function Showcase() {
 
             <Header />
 
-            <main className={styles.main}>
+            <Main>
                 <div>Showcase</div>
-            </main>
+            </Main>
 
             <Footer />
         </>

@@ -2,8 +2,7 @@ import Head from 'next/head';
 
 import { Footer } from '@/components/Footer';
 import { Header } from '@/components/Header';
-
-import styles from './Profile.module.scss';
+import { Main } from '@/components/Main';
 
 export default function Profile() {
     return (
@@ -16,9 +15,9 @@ export default function Profile() {
 
             <Header />
 
-            <main className={styles.main}>
+            <Main>
                 <div>Profile</div>
-            </main>
+            </Main>
 
             <Footer />
         </>

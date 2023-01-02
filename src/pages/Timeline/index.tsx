@@ -2,8 +2,7 @@ import Head from 'next/head';
 
 import { Footer } from '@/components/Footer';
 import { Header } from '@/components/Header';
-
-import styles from './Timeline.module.scss';
+import { Main } from '@/components/Main';
 
 export default function Timeline() {
     return (
@@ -16,9 +15,9 @@ export default function Timeline() {
 
             <Header />
 
-            <main className={styles.main}>
+            <Main>
                 <div>Timeline</div>
-            </main>
+            </Main>
 
             <Footer />
         </>
