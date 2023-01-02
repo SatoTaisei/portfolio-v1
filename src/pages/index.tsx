@@ -1,8 +1,11 @@
 import Head from 'next/head';
 
+import { Contact } from '@/components/Contact';
 import { Footer } from '@/components/Footer';
 import { Header } from '@/components/Header';
 import { Hero } from '@/components/Hero';
+import { ShowCase } from '@/components/ShowCase';
+import { Timeline } from '@/components/Timeline';
 import styles from '@styles/Home.module.scss';
 
 export default function Home() {
@@ -21,9 +24,9 @@ export default function Home() {
 
             <main className={styles.main}>
                 <Hero className={styles.hero} />
-                <div className={styles.showcase}>ShowCase</div>
-                <div className={styles.timeline}>Timeline</div>
-                <div className={styles.contact}>Contact</div>
+                <ShowCase className={styles.showcase} />
+                <Timeline className={styles.timeline} />
+                <Contact className={styles.contact} />
             </main>
 
             <Footer />
