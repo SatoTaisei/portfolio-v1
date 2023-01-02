@@ -6,6 +6,25 @@
     align-items: center;
 }
 
+.hero {
+    margin-top: 2rem;
+}
+
+.showcase {
+    margin-top: 2rem;
+    @extend .dummy;
+}
+
+.timeline {
+    margin-top: 2rem;
+    @extend .dummy;
+}
+
+.contact {
+    margin-top: 2rem;
+    @extend .dummy;
+}
+
 .dummy {
     width: 98%;
     background-color: #ddd;

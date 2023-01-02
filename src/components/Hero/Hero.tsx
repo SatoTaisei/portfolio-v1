@@ -1,5 +1,14 @@
+import classNames from 'classnames';
+import { FC } from 'react';
+
 import styles from './Hero.module.scss';
 
-export const Hero = () => {
-    return <div className={styles.wrapper}>Hero Area</div>;
+type Props = {
+    className?: string;
+};
+
+export const Hero: FC<Props> = ({ className }) => {
+    return (
+        <div className={classNames(styles.wrapper, className)}>Hero Area</div>
+    );
 };

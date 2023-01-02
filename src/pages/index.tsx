@@ -20,11 +20,10 @@ export default function Home() {
             <Header />
 
             <main className={styles.main}>
-                <Hero />
-
-                <div className={styles.dummy}>ShowCase</div>
-                <div className={styles.dummy}>Timeline</div>
-                <div className={styles.dummy}>Contact</div>
+                <Hero className={styles.hero} />
+                <div className={styles.showcase}>ShowCase</div>
+                <div className={styles.timeline}>Timeline</div>
+                <div className={styles.contact}>Contact</div>
             </main>
 
             <Footer />
