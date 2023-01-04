@@ -21,6 +21,7 @@
     display: grid;
     place-content: center;
     place-items: center;
+    row-gap: 0.4rem;
 }
 
 .box {
@@ -43,6 +44,7 @@
 
     &_address {
         color: #333;
+        font-weight: bold;
     }
 }
 
@@ -55,5 +57,6 @@
 
     &_id {
         color: #eee;
+        font-weight: bold;
     }
 }
