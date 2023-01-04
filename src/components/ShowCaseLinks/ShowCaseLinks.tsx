@@ -7,7 +7,7 @@ type Props = {
     className?: string;
 };
 
-export const ShowCase: FC<Props> = ({ className }) => {
+export const ShowCaseLinks: FC<Props> = ({ className }) => {
     return (
         <div className={classNames(styles.wrapper, className)}>ShowCase</div>
     );

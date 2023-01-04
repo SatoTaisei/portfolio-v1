@@ -5,8 +5,8 @@ import { Footer } from '@/components/Footer';
 import { Header } from '@/components/Header';
 import { Hero } from '@/components/Hero';
 import { Main } from '@/components/Main';
-import { ShowCase } from '@/components/ShowCase';
-import { Timeline } from '@/components/Timeline';
+import { ShortTimeline } from '@/components/ShortTimeline';
+import { ShowCase } from '@/components/ShowCaseLinks';
 import styles from '@styles/Home.module.scss';
 
 export default function Home() {
@@ -26,7 +26,7 @@ export default function Home() {
             <Main className={styles.main}>
                 <Hero />
                 <ShowCase />
-                <Timeline />
+                <ShortTimeline />
                 <ContactLinks className={styles.contact} />
             </Main>
 
