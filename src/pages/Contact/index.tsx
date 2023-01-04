@@ -22,8 +22,8 @@ export default function Contact() {
 
             <Header />
 
-            <h1 className={styles.heading}>Contact</h1>
             <Main className={styles.main}>
+                <h1 className={styles.heading}>Contact</h1>
                 <div className={styles.box}>
                     <Link
                         href={'mailto:t.sei43rm@gmail.com'}
@@ -39,7 +39,6 @@ export default function Contact() {
                             t.sei43rm@gmail.com
                         </span>
                     </Link>
-
                     <Link
                         href={'https://twitter.com/vast_sei43rm'}
                         className={styles.twitter}

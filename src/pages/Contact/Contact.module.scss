@@ -3,9 +3,9 @@
 
 .main {
     display: grid;
-    place-content: center;
+    grid-auto-rows: 60px auto;
     margin: 2rem auto;
-    min-height: calc(100dvh - 260px);
+    min-height: calc(100dvh - 180px);
 }
 
 .heading {
@@ -13,8 +13,7 @@
     color: #eee;
     height: 60px;
     line-height: 60px;
-    padding-left: 3rem;
-    margin-top: 2rem;
+    margin-left: 3rem;
 }
 
 .centering {
