@@ -1,0 +1,62 @@
+@import '../../styles/_breakpoint';
+@import '../../styles/_mixin';
+
+.box {
+    display: grid;
+    place-content: center;
+    row-gap: 3rem;
+    margin: 2rem 0;
+
+    @include mq(sm) {
+        grid-template-columns: 150px 150px 150px;
+        column-gap: 4rem;
+        margin: 0;
+    }
+}
+
+.centering {
+    display: grid;
+    place-content: center;
+    place-items: center;
+    row-gap: 0.4rem;
+}
+
+.link {
+    width: 150px;
+    height: 150px;
+    border-radius: 2rem;
+}
+
+.twitter {
+    @extend .centering;
+    @extend .link;
+    background: linear-gradient(144deg, #84d0ff, #1d9bf0 50%, #1a7ee9);
+
+    &:hover > img {
+        transform: scale(1.1);
+        transition: 0.3s ease;
+    }
+}
+
+.zenn {
+    @extend .centering;
+    @extend .link;
+    background: linear-gradient(144deg, #fff, #b8d3ff 70%, #8fceff);
+
+    &:hover > img {
+        transform: scale(1.1);
+        transition: 0.3s ease;
+    }
+}
+
+.gmail {
+    @extend .centering;
+    @extend .link;
+    background-color: #eee;
+    background: linear-gradient(144deg, #fff, #eee 50%, #bbb);
+
+    &:hover > img {
+        transform: scale(1.1);
+        transition: 0.3s ease;
+    }
+}
