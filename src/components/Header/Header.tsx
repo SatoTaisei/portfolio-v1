@@ -7,7 +7,6 @@ const MENU_LIST = [
     { name: 'showcase', url: '/Showcase' },
     { name: 'timeline', url: '/Timeline' },
     { name: 'contact', url: '/Contact' },
-    { name: 'profile', url: '/Profile' },
 ];
 
 export const Header = () => {
