@@ -4,6 +4,7 @@ import { Contact } from '@/components/Contact';
 import { Footer } from '@/components/Footer';
 import { Header } from '@/components/Header';
 import { Hero } from '@/components/Hero';
+import { Main } from '@/components/Main';
 import { ShowCase } from '@/components/ShowCase';
 import { Timeline } from '@/components/Timeline';
 import styles from '@styles/Home.module.scss';
@@ -22,12 +23,12 @@ export default function Home() {
 
             <Header />
 
-            <main className={styles.main}>
-                <Hero className={styles.hero} />
-                <ShowCase className={styles.showcase} />
-                <Timeline className={styles.timeline} />
-                <Contact className={styles.contact} />
-            </main>
+            <Main className={styles.main}>
+                <Hero />
+                <ShowCase />
+                <Timeline />
+                <Contact />
+            </Main>
 
             <Footer />
         </>
