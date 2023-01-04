@@ -4,6 +4,7 @@ import Link from 'next/link';
 
 import { Footer } from '@/components/Footer';
 import { Header } from '@/components/Header';
+import { Heading } from '@/components/Heading';
 import { Main } from '@/components/Main';
 
 import GmailLogo from '../../../public/assets/images/gmail_logo.svg';
@@ -23,7 +24,7 @@ export default function Contact() {
             <Header />
 
             <Main className={styles.main}>
-                <h1 className={styles.heading}>Contact</h1>
+                <Heading text="Contact" className={styles.heading} />
                 <div className={styles.box}>
                     <Link
                         href={'mailto:t.sei43rm@gmail.com'}

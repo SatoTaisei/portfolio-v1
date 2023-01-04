@@ -1,4 +1,10 @@
 .main {
+    display: grid;
+    grid-auto-rows: 60px auto;
     min-height: calc(100dvh - 180px);
     margin: 2rem auto;
+}
+
+.heading {
+    margin-left: 3rem;
 }
