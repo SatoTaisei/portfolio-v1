@@ -14,12 +14,14 @@
 
 .box {
     display: grid;
+    place-content: center;
     row-gap: 3rem;
+    margin: 2rem 0;
 
     @include mq(sm) {
-        place-content: center;
-        grid-template-columns: 150px 150px;
-        column-gap: 3rem;
+        grid-template-columns: 150px 150px 150px;
+        column-gap: 4rem;
+        margin: 0;
     }
 }
 
@@ -36,34 +38,36 @@
     border-radius: 2rem;
 }
 
+.twitter {
+    @extend .centering;
+    @extend .link;
+    background: linear-gradient(144deg, #84d0ff, #1d9bf0 50%, #1a7ee9);
+
+    &:hover > img {
+        transform: scale(1.1);
+        transition: 0.3s ease;
+    }
+}
+
+.zenn {
+    @extend .centering;
+    @extend .link;
+    background: linear-gradient(144deg, #fff, #b8d3ff 70%, #8fceff);
+
+    &:hover > img {
+        transform: scale(1.1);
+        transition: 0.3s ease;
+    }
+}
+
 .gmail {
     @extend .centering;
     @extend .link;
     background-color: #eee;
+    background: linear-gradient(144deg, #fff, #eee 50%, #bbb);
 
-    &_address {
-        color: #333;
-        font-size: 1.2rem;
-        font-weight: bold;
-    }
     &:hover > img {
         transform: scale(1.1);
-        transition: all 0.3s;
-    }
-}
-
-.twitter {
-    @extend .centering;
-    @extend .link;
-    background-color: #1d9bf0;
-
-    &_id {
-        color: #eee;
-        font-size: 1.2rem;
-        font-weight: bold;
-    }
-    &:hover > img {
-        transform: scale(1.1);
-        transition: all 0.3s;
+        transition: 0.3s ease;
     }
 }

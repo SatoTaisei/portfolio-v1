@@ -6,9 +6,9 @@ import { Footer } from '@/components/Footer';
 import { Header } from '@/components/Header';
 import { Heading } from '@/components/Heading';
 import { Main } from '@/components/Main';
-
-import GmailLogo from '../../../public/assets/images/gmail_logo.svg';
-import TwitterLogo from '../../../public/assets/images/twitter_logo.svg';
+import GmailLogo from 'public/assets/images/logo/gmail.svg';
+import TwitterLogo from 'public/assets/images/logo/twitter.svg';
+import ZennLogo from 'public/assets/images/logo/zenn.png';
 
 import styles from './Contact.module.scss';
 
@@ -27,20 +27,6 @@ export default function Contact() {
                 <Heading text="Contact" className={styles.heading} />
                 <div className={styles.box}>
                     <Link
-                        href={'mailto:t.sei43rm@gmail.com'}
-                        className={styles.gmail}
-                    >
-                        <Image
-                            src={GmailLogo}
-                            alt={'gmail'}
-                            width={50}
-                            height={50}
-                        />
-                        <span className={styles.gmail_address}>
-                            t.sei43rm@gmail.com
-                        </span>
-                    </Link>
-                    <Link
                         href={'https://twitter.com/vast_sei43rm'}
                         className={styles.twitter}
                     >
@@ -50,7 +36,18 @@ export default function Contact() {
                             width={50}
                             height={50}
                         />
-                        <div className={styles.twitter_id}>@vast_sei43rm</div>
+                    </Link>
+                    <Link
+                        href={'https://zenn.dev/hosoiroji'}
+                        className={styles.zenn}
+                    >
+                        <Image src={ZennLogo} alt={'zenn'} width={100} />
+                    </Link>
+                    <Link
+                        href={'mailto:t.sei43rm@gmail.com'}
+                        className={styles.gmail}
+                    >
+                        <Image src={GmailLogo} alt={'gmail'} width={50} />
                     </Link>
                 </div>
             </Main>
