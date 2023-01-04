@@ -1,3 +1,59 @@
-.dummy {
-    display: block;
+@import '../../styles/_breakpoint';
+@import '../../styles/_mixin';
+
+.main {
+    display: grid;
+    place-content: center;
+    margin: 2rem auto;
+    min-height: calc(100dvh - 260px);
+}
+
+.heading {
+    font-size: 4rem;
+    color: #eee;
+    height: 60px;
+    line-height: 60px;
+    padding-left: 3rem;
+    margin-top: 2rem;
+}
+
+.centering {
+    display: grid;
+    place-content: center;
+    place-items: center;
+}
+
+.box {
+    display: grid;
+    row-gap: 2rem;
+
+    @include mq(sm) {
+        place-content: center;
+        grid-template-columns: 150px 150px;
+        column-gap: 2rem;
+    }
+}
+
+.gmail {
+    @extend .centering;
+    background-color: #eee;
+    width: 150px;
+    height: 150px;
+    border-radius: 2rem;
+
+    &_address {
+        color: #333;
+    }
+}
+
+.twitter {
+    @extend .centering;
+    background-color: #1d9bf0;
+    width: 150px;
+    height: 150px;
+    border-radius: 2rem;
+
+    &_id {
+        color: #eee;
+    }
 }

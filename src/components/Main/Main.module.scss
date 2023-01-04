@@ -2,10 +2,6 @@
 @import '../../styles/_mixin';
 
 .wrapper {
-    min-height: calc(100dvh - 140px);
-    display: grid;
-    row-gap: 2rem;
-
     @include mq(sm) {
         max-width: 640px;
     }

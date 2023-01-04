@@ -4,6 +4,8 @@ import { Footer } from '@/components/Footer';
 import { Header } from '@/components/Header';
 import { Main } from '@/components/Main';
 
+import styles from './Showcase.module.scss';
+
 export default function Showcase() {
     return (
         <>
@@ -15,7 +17,7 @@ export default function Showcase() {
 
             <Header />
 
-            <Main>
+            <Main className={styles.main}>
                 <div>Showcase</div>
             </Main>
 

@@ -4,6 +4,8 @@ import { Footer } from '@/components/Footer';
 import { Header } from '@/components/Header';
 import { Main } from '@/components/Main';
 
+import styles from './Timeline.module.scss';
+
 export default function Timeline() {
     return (
         <>
@@ -15,7 +17,7 @@ export default function Timeline() {
 
             <Header />
 
-            <Main>
+            <Main className={styles.main}>
                 <div>Timeline</div>
             </Main>
 
