@@ -1,3 +1,4 @@
+import styles from '@styles/Home.module.scss';
 import Head from 'next/head';
 
 import { ContactLinks } from '@/components/ContactLinks';
@@ -5,9 +6,8 @@ import { Footer } from '@/components/Footer';
 import { Header } from '@/components/Header';
 import { Hero } from '@/components/Hero';
 import { Main } from '@/components/Main';
-import { ShortTimeline } from '@/components/ShortTimeline';
-import { ShowCaseLinks } from '@/components/ShowCaseLinks';
-import styles from '@styles/Home.module.scss';
+import { ShowCaseList } from '@/components/ShowCaseList';
+import { TimelineList } from '@/components/TimelineList';
 
 export default function Home() {
     return (
@@ -25,8 +25,8 @@ export default function Home() {
 
             <Main className={styles.main}>
                 <Hero />
-                <ShowCaseLinks />
-                <ShortTimeline />
+                <ShowCaseList />
+                <TimelineList />
                 <ContactLinks className={styles.contact} />
             </Main>
 
