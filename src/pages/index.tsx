@@ -1,4 +1,3 @@
-import styles from '@styles/Home.module.scss';
 import Head from 'next/head';
 
 import { ContactLinks } from '@/components/ContactLinks';
@@ -8,6 +7,7 @@ import { Hero } from '@/components/Hero';
 import { Main } from '@/components/Main';
 import { ShowCaseList } from '@/components/ShowCaseList';
 import { TimelineList } from '@/components/TimelineList';
+import styles from '@/styles/Home.module.scss';
 
 export default function Home() {
     return (
