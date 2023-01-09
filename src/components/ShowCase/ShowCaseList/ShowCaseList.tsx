@@ -1,5 +1,7 @@
 import { FC } from 'react';
 
+import { ShowCaseItem } from '@/components/ShowCase/ShowCaseItem';
+
 import styles from './ShowCaseList.module.scss';
 
 type Props = {
@@ -9,7 +11,7 @@ type Props = {
 export const ShowCaseList: FC<Props> = () => {
     return (
         <div className={styles.container}>
-            <div className={styles.box}>Showcase</div>
+            <ShowCaseItem />
         </div>
     );
 };

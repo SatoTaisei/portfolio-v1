@@ -1,0 +1,29 @@
+.showcase {
+    display: grid;
+    place-content: center;
+    color: #333;
+    font-weight: bold;
+    width: 300px;
+    height: 300px;
+    padding: 56px clamp(16px, -56px + 15vw, 64px) 64px;
+    background: #fff;
+    border-radius: clamp(6px, -8.4px + 3vw, 16px);
+
+    box-shadow: inset clamp(1.6px, -3.2px + 1vw, 5px)
+            clamp(1.6px, -3.2px + 1vw, 5px) clamp(3.2px, -8.6px + 2vw, 10px)
+            rgba(0, 0, 0, 0.1),
+        clamp(1.6px, -3.2px + 1vw, 5px) clamp(1.6px, -3.2px + 1vw, 5px)
+            clamp(3.2px, -8.6px + 2vw, 10px) transparent;
+
+    transition: box-shadow ease-in-out 0.3s;
+
+    &:hover {
+        box-shadow: inset clamp(1.6px, -3.2px + 1vw, 5px)
+                clamp(1.6px, -3.2px + 1vw, 5px) clamp(3.2px, -8.6px + 2vw, 10px)
+                transparent,
+            clamp(1.6px, -3.2px + 1vw, 5px) clamp(1.6px, -3.2px + 1vw, 5px)
+                clamp(3.2px, -8.6px + 2vw, 10px) rgba(0, 0, 0, 0.1);
+
+        cursor: pointer;
+    }
+}
