@@ -26,11 +26,21 @@ export default function Home() {
 
             <Main className={styles.main}>
                 <Hero />
-                <ShowCaseList />
-                <TimelineList />
 
-                <Heading title="Contact" className={styles.heading} />
-                <ContactLinks className={styles.contact} />
+                <div>
+                    <Heading title="ShowCase" className={styles.heading} />
+                    <ShowCaseList />
+                </div>
+
+                <div>
+                    <Heading title="Timeline" className={styles.heading} />
+                    <TimelineList />
+                </div>
+
+                <div>
+                    <Heading title="Contact" className={styles.heading} />
+                    <ContactLinks className={styles.contact} />
+                </div>
             </Main>
 
             <Footer />
