@@ -6,7 +6,7 @@ import { Header } from '@/components/Header';
 import { Heading } from '@/components/Heading';
 import { Hero } from '@/components/Hero';
 import { Main } from '@/components/Main';
-import { ShowCaseList } from '@/components/ShowCaseList';
+import { ShowCaseList } from '@/components/ShowCase/ShowCaseList';
 import { TimelineList } from '@/components/TimelineList';
 import styles from '@/styles/Home.module.scss';
 
