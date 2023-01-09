@@ -3,6 +3,7 @@ import Head from 'next/head';
 import { ContactLinks } from '@/components/ContactLinks';
 import { Footer } from '@/components/Footer';
 import { Header } from '@/components/Header';
+import { Heading } from '@/components/Heading';
 import { Hero } from '@/components/Hero';
 import { Main } from '@/components/Main';
 import { ShowCaseList } from '@/components/ShowCaseList';
@@ -27,6 +28,8 @@ export default function Home() {
                 <Hero />
                 <ShowCaseList />
                 <TimelineList />
+
+                <Heading title="Contact" className={styles.heading} />
                 <ContactLinks className={styles.contact} />
             </Main>
 

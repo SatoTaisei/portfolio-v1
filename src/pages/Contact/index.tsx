@@ -20,7 +20,7 @@ export default function Contact() {
             <Header />
 
             <Main className={styles.main}>
-                <Heading text="Contact" className={styles.heading} />
+                <Heading title="Contact" className={styles.heading} />
                 <ContactLinks />
             </Main>
 

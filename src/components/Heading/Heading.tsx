@@ -4,10 +4,10 @@ import { FC } from 'react';
 import styles from './Heading.module.scss';
 
 type Props = {
-    text: string;
+    title: string;
     className?: string;
 };
 
-export const Heading: FC<Props> = ({ text, className }) => {
-    return <h1 className={classNames(styles.heading, className)}>{text}</h1>;
+export const Heading: FC<Props> = ({ title, className }) => {
+    return <h2 className={classNames(styles.heading, className)}>{title}</h2>;
 };

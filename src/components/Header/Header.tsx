@@ -20,7 +20,7 @@ export const Header = () => {
         <header className={styles.wrapper}>
             <div>
                 <Link href={'/'}>
-                    <span className={styles.logo}>Sato Taisei</span>
+                    <h1 className={styles.logo}>Sato Taisei</h1>
                 </Link>
             </div>
 

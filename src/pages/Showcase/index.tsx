@@ -19,8 +19,7 @@ export default function Showcase() {
             <Header />
 
             <Main className={styles.main}>
-                <Heading text="Showcase" className={styles.heading} />
-                <div>Showcase</div>
+                <Heading title="Showcase" className={styles.heading} />
             </Main>
 
             <Footer />
