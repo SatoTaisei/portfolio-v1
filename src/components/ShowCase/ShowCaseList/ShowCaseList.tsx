@@ -9,7 +9,7 @@ type Props = {
 };
 
 const SHOWCASE_LIST = [
-    { title: 'Todo List', url: 'http://todo-firebase-rouge.vercel.app/' },
+    { title: 'Todo List', url: 'https://todo-firebase-rouge.vercel.app/' },
     { title: 'Menu List', url: 'https://sunrise-3012.vercel.app/' },
 ];
 
