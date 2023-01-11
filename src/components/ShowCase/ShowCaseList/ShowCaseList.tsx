@@ -9,8 +9,16 @@ type Props = {
 };
 
 const SHOWCASE_LIST = [
-    { title: 'Todo List', url: 'https://todo-firebase-rouge.vercel.app/' },
-    { title: 'Menu List', url: 'https://sunrise-3012.vercel.app/' },
+    {
+        title: 'Todo List',
+        url: 'https://todo-firebase-rouge.vercel.app/',
+        githubUrl: 'https://github.com/SatoTaisei/todo-firebase',
+    },
+    {
+        title: 'Menu List',
+        url: 'https://sunrise-3012.vercel.app/',
+        githubUrl: 'https://github.com/SatoTaisei/sunrise',
+    },
 ];
 
 export const ShowCaseList: FC<Props> = () => {

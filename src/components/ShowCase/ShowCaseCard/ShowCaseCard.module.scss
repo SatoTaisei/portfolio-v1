@@ -20,19 +20,33 @@
                 transparent,
             clamp(1.6px, -3.2px + 1vw, 5px) clamp(1.6px, -3.2px + 1vw, 5px)
                 clamp(3.2px, -8.6px + 2vw, 10px) rgba(0, 0, 0, 0.1);
-
-        cursor: pointer;
     }
 }
 
 .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     font-size: 1.6rem;
     line-height: 5rem;
-    padding-left: 2rem;
     border-bottom: 1px #bbb solid;
+}
+
+.title {
+    margin-left: 2rem;
 }
 
 .content {
     display: grid;
     place-content: center;
+}
+
+.github {
+    height: 40px;
+    width: 40px;
+    display: grid;
+    place-content: center;
+    border-radius: 10px;
+    background-color: #eee;
+    margin-right: 1rem;
 }
