@@ -1,1 +1,0 @@
-export { ShowCaseItem } from './ShowCaseItem';
